@@ -9,13 +9,13 @@ public class FatController {
 		pilha = new PilhaInt();
 	}
 
-	public int Pilhar(int valor) {
+	public long Pilhar(int valor) {
 
 		for (int i = valor; i > 0; i--) {
 			pilha.push(i);
 		}
 
-		int fat = 1;
+		long fat = 1;
 
 		while (!pilha.isEmpty()) {
 			try {
